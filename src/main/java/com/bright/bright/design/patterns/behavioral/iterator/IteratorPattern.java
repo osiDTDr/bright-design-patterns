@@ -3,7 +3,12 @@ package com.bright.bright.design.patterns.behavioral.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * 迭代器模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/10
+ */
 public class IteratorPattern {
     public static void main(String[] args) {
         Aggregate ag = new ConcreteAggregate();
@@ -23,6 +28,7 @@ public class IteratorPattern {
 
 /**
  * 抽象迭代器
+ * 定义访问和遍历聚合元素的接口
  */
 interface Iterator {
     Object first();
@@ -34,6 +40,7 @@ interface Iterator {
 
 /**
  * 抽象聚合
+ * 定义存储、添加、删除聚合对象以及创建迭代器对象的接口
  */
 interface Aggregate {
     void add(Object obj);
@@ -45,6 +52,7 @@ interface Aggregate {
 
 /**
  * 具体聚合
+ * 实现抽象聚合类，返回一个具体迭代器的实例
  */
 class ConcreteAggregate implements Aggregate {
     private final List<Object> list = new ArrayList<>();
@@ -65,9 +73,10 @@ class ConcreteAggregate implements Aggregate {
 
 /**
  * 具体迭代器
+ * 实现抽象迭代器接口中所定义的方法，完成对聚合对象的遍历，记录遍历的当前位置
  */
 class ConcreteIterator implements Iterator {
-    private List<Object> list = null;
+    private final List<Object> list;
     private int index = -1;
 
     public ConcreteIterator(List<Object> list) {

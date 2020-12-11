@@ -1,5 +1,11 @@
 package com.bright.bright.design.patterns.behavioral.strategy;
 
+/**
+ * 策略模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class StrategyPattern {
     public static void main(String[] args) {
         Context c = new Context();
@@ -20,7 +26,7 @@ interface Strategy {
     /**
      * 策略方法
      */
-    public void strategyMethod();
+    void strategyMethod();
 }
 
 /**

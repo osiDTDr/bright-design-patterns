@@ -1,5 +1,11 @@
 package com.bright.bright.design.patterns.behavioral.template;
 
+/**
+ * 模板模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class TemplateMethodPattern {
     public static void main(String[] args) {
         AbstractClass tm = new ConcreteClass();

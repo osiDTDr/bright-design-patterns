@@ -3,6 +3,12 @@ package com.bright.bright.design.patterns.behavioral.mediator;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 中介者模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class MediatorPattern {
     public static void main(String[] args) {
         Colleague c1, c2;
@@ -16,6 +22,7 @@ public class MediatorPattern {
 
 /**
  * 抽象同事类
+ * 定义同事类的接口，保存中介者对象，提供同事对象交互的抽象方法，实现所有相互影响的同事类的公共功能
  */
 interface Colleague {
     void receive();

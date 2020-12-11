@@ -1,5 +1,11 @@
 package com.bright.bright.design.patterns.create.prototype;
 
+/**
+ * 原型模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class PrototypePattern {
     public static void main(String[] args) throws CloneNotSupportedException {
         RealizeType obj1 = new RealizeType();

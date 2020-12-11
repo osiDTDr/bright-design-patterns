@@ -1,5 +1,11 @@
 package com.bright.bright.design.patterns.behavioral.memento;
 
+/**
+ * 备忘录模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class MementoPattern {
     public static void main(String[] args) {
         Originator or = new Originator();

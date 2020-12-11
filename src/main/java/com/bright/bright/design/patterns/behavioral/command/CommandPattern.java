@@ -1,5 +1,11 @@
 package com.bright.bright.design.patterns.behavioral.command;
 
+/**
+ * 命令者模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/06
+ */
 public class CommandPattern {
     public static void main(String[] args) {
         Command cmd = new ConcreteCommand();

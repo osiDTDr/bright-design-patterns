@@ -1,5 +1,11 @@
 package com.bright.bright.design.patterns.behavioral.state;
 
+/**
+ * 状态模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class StatePatternClient {
     public static void main(String[] args) {
         // 创建环境

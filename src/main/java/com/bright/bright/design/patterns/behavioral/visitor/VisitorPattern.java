@@ -4,6 +4,12 @@ package com.bright.bright.design.patterns.behavioral.visitor;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 访问者模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class VisitorPattern {
     public static void main(String[] args) {
         ObjectStructure os = new ObjectStructure();

@@ -3,6 +3,12 @@ package com.bright.bright.design.patterns.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 观察者模式
+ *
+ * @author zhengyuan
+ * @since 2020/12/07
+ */
 public class ObserverPattern {
     public static void main(String[] args) {
         Subject subject = new ConcreteSubject();
